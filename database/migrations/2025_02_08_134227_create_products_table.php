@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained()->onDelete("cascade");
             $table->foreignId('category_id')->constrained()->onDelete("cascade");
             $table->foreignId('brand_id')->nullable()->constrained()->onDelete("cascade");
-            $table->foreignId('product_photos_id')->constrained()->onDelete("cascade");
+            // $table->foreignId('product_photos_id')->constrained()->onDelete("cascade");
             $table->string('thumbnail_img', 100)->nullable();
             $table->string('video_provider', 20)->nullable();
             $table->string('video_link', 100)->nullable();
